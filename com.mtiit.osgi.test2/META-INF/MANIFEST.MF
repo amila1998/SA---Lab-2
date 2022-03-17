@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test2
+Bundle-SymbolicName: com.mtiit.osgi.test2
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.mtiit.osgi.test2.Activator
+Bundle-Vendor: MTIIT
+Bundle-RequiredExecutionEnvironment: JavaSE-16
+Automatic-Module-Name: com.mtiit.osgi.test2
+Import-Package: org.osgi.framework;version="1.3.0",
+ org.osgi.util.tracker;version="1.3.1"
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,5 @@
+package servicesubscriber;
+
+public class ServicePublishImpl {
+
+}

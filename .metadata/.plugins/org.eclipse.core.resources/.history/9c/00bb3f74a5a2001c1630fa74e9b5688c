@@ -1,0 +1,44 @@
+package servicepublisher;
+
+import java.util.Hashtable;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceEvent;
+import org.osgi.framework.ServiceListener;
+import org.osgi.framework.ServiceReference;
+import org.osgi.util.tracker.ServiceTracker;
+
+public class ServiceActivator implements BundleActivator, ServiceListener {
+
+	
+	private BundleContext fContext;
+
+	@Override
+	public void start(BundleContext context) throws Exception {
+		
+	}
+
+	@Override
+	public void stop(BundleContext context) throws Exception {
+		
+	}
+
+	public void serviceChanged(ServiceEvent ev) {
+		ServiceReference<?> sr = ev.getServiceReference();
+		switch(ev.getType()) {
+			case ServiceEvent.REGISTERED:
+			{
+				
+			}
+			break;
+			case ServiceEvent.UNREGISTERING:
+			{
+				
+			}
+			break;
+		}
+	}
+
+
+}
